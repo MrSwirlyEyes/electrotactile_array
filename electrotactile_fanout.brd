@@ -5710,9 +5710,31 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </autorouter>
 <elements>
 <element name="JP1" library="PiB_connectors" package="SMT-JUMPER_2_NO_SILK" value="JUMPER_SMD_2-PAD_NO_SILK" x="-9" y="-7" rot="MR90"/>
-<element name="J2" library="PiB_connectors" package="_MOLEX-5025983393_FPC_PITCH-0.3MM" package3d_urn="urn:adsk.eagle:package:3945547/2" value="1X33_MOLEX_FPC_FPC_RIBBON-CABLE" x="0" y="-6.7"/>
+<element name="J2" library="PiB_connectors" package="_MOLEX-5025983393_FPC_PITCH-0.3MM" package3d_urn="urn:adsk.eagle:package:3945547/2" value="1x33 Molex Connector" x="0" y="-6.7">
+<attribute name="DATASHEET" value="https://www.molex.com/pdm_docs/sd/5025982593_sd.pdf" x="0" y="-6.7" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET_CABLE" value="https://www.molex.com/pdm_docs/sd/150150423_sd.pdf" x="0" y="-6.7" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="0" y="-6.7" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=WM9775CT-ND" x="0" y="-6.7" size="1.778" layer="27" display="off"/>
+<attribute name="DISTLINK_CABLE" value="https://www.digikey.com/products/en?keywords=WM9647-ND" x="0" y="-6.7" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="WM9775CT-ND" x="0" y="-6.7" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN_CABLE" value="WM9647-ND" x="0" y="-6.7" size="1.778" layer="27" display="off"/>
+<attribute name="DIST_CABLE" value="Digikey" x="0" y="-6.7" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Molex, LLC" x="0" y="-6.7" size="1.778" layer="27" display="off"/>
+<attribute name="MFR_CABLE" value="Molex, LLC" x="0" y="-6.7" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="5025983393" x="0" y="-6.7" size="1.778" layer="27" display="off"/>
+<attribute name="MPN_CABLE" value="0150150233" x="0" y="-6.7" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" value="1x33 Molex Connector" x="0" y="-6.7" size="1.778" layer="27" display="off"/>
+</element>
 <element name="U$1" library="PiB_logo" package="LRG-LOGO" value="" x="14" y="-7.6" rot="MR0"/>
-<element name="J1" library="PiB_connectors" package="2X17-RA-FEMALE" package3d_urn="urn:adsk.eagle:package:3955995/2" value="2X17_PTH_RA-FEMALE" x="0" y="0" rot="R180"/>
+<element name="J1" library="PiB_connectors" package="2X17-RA-FEMALE" package3d_urn="urn:adsk.eagle:package:3955995/2" value="2x17 PTH RA FEMALE" x="0" y="0" rot="R180">
+<attribute name="DATASHEET" value="http://suddendocs.samtec.com/prints/ssq-1xx-xx-xxx-x-xx-xxx-xx-x-mkt.pdf" x="0" y="0" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="Digikey" x="0" y="0" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=SAM1224-17-ND" x="0" y="0" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="SAM1224-17-ND" x="0" y="0" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="Samtec Inc." x="0" y="0" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="SSQ-117-02-T-D-RA" x="0" y="0" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" value="2x17 PTH RA FEMALE" x="0" y="0" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="1">

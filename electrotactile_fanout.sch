@@ -499,46 +499,6 @@
 <gate name="G$1" symbol="1X33" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="_MOLEX-5025983393_FPC_PITCH-0.3MM">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="10" pad="P$10"/>
-<connect gate="G$1" pin="11" pad="P$11"/>
-<connect gate="G$1" pin="12" pad="P$12"/>
-<connect gate="G$1" pin="13" pad="P$13"/>
-<connect gate="G$1" pin="14" pad="P$14"/>
-<connect gate="G$1" pin="15" pad="P$15"/>
-<connect gate="G$1" pin="16" pad="P$16"/>
-<connect gate="G$1" pin="17" pad="P$17"/>
-<connect gate="G$1" pin="18" pad="P$18"/>
-<connect gate="G$1" pin="19" pad="P$19"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="20" pad="P$20"/>
-<connect gate="G$1" pin="21" pad="P$21"/>
-<connect gate="G$1" pin="22" pad="P$22"/>
-<connect gate="G$1" pin="23" pad="P$23"/>
-<connect gate="G$1" pin="24" pad="P$24"/>
-<connect gate="G$1" pin="25" pad="P$25"/>
-<connect gate="G$1" pin="26" pad="P$26"/>
-<connect gate="G$1" pin="27" pad="P$27"/>
-<connect gate="G$1" pin="28" pad="P$28"/>
-<connect gate="G$1" pin="29" pad="P$29"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="30" pad="P$30"/>
-<connect gate="G$1" pin="31" pad="P$31"/>
-<connect gate="G$1" pin="32" pad="P$32"/>
-<connect gate="G$1" pin="33" pad="P$33"/>
-<connect gate="G$1" pin="4" pad="P$4"/>
-<connect gate="G$1" pin="5" pad="P$5"/>
-<connect gate="G$1" pin="6" pad="P$6"/>
-<connect gate="G$1" pin="7" pad="P$7"/>
-<connect gate="G$1" pin="8" pad="P$8"/>
-<connect gate="G$1" pin="9" pad="P$9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="_FPC_RIBBON-CABLE" package="_MOLEX-5025983393_FPC_PITCH-0.3MM">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
@@ -579,7 +539,21 @@
 <package3dinstance package3d_urn="urn:adsk.eagle:package:3945547/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DATASHEET" value="https://www.molex.com/pdm_docs/sd/5025982593_sd.pdf" constant="no"/>
+<attribute name="DATASHEET_CABLE" value="https://www.molex.com/pdm_docs/sd/150150423_sd.pdf" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=WM9775CT-ND" constant="no"/>
+<attribute name="DISTLINK_CABLE" value="https://www.digikey.com/products/en?keywords=WM9647-ND" constant="no"/>
+<attribute name="DISTPN" value="WM9775CT-ND" constant="no"/>
+<attribute name="DISTPN_CABLE" value="WM9647-ND" constant="no"/>
+<attribute name="DIST_CABLE" value="Digikey" constant="no"/>
+<attribute name="MFR" value="Molex, LLC" constant="no"/>
+<attribute name="MFR_CABLE" value="Molex, LLC" constant="no"/>
+<attribute name="MPN" value="5025983393" constant="no"/>
+<attribute name="MPN_CABLE" value="0150150233" constant="no"/>
+<attribute name="VALUE" value="1x33 Molex Connector" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -656,7 +630,15 @@
 <package3dinstance package3d_urn="urn:adsk.eagle:package:3955995/2"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DATASHEET" value="http://suddendocs.samtec.com/prints/ssq-1xx-xx-xxx-x-xx-xxx-xx-x-mkt.pdf" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTLINK" value="https://www.digikey.com/products/en?keywords=SAM1224-17-ND" constant="no"/>
+<attribute name="DISTPN" value="SAM1224-17-ND" constant="no"/>
+<attribute name="MFR" value="Samtec Inc." constant="no"/>
+<attribute name="MPN" value="SSQ-117-02-T-D-RA" constant="no"/>
+<attribute name="VALUE" value="2x17 PTH RA FEMALE" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -674,8 +656,8 @@
 </classes>
 <parts>
 <part name="JP1" library="PiB_connectors" deviceset="JUMPER_SMD_2-PAD_NO" device="_SILK"/>
-<part name="J2" library="PiB_connectors" deviceset="1X33_MOLEX_FPC" device="_FPC_RIBBON-CABLE" package3d_urn="urn:adsk.eagle:package:3945547/2"/>
-<part name="J1" library="PiB_connectors" deviceset="2X17" device="_PTH_RA-FEMALE" package3d_urn="urn:adsk.eagle:package:3955995/2"/>
+<part name="J2" library="PiB_connectors" deviceset="1X33_MOLEX_FPC" device="_FPC_RIBBON-CABLE" package3d_urn="urn:adsk.eagle:package:3945547/2" value="1x33 Molex Connector"/>
+<part name="J1" library="PiB_connectors" deviceset="2X17" device="_PTH_RA-FEMALE" package3d_urn="urn:adsk.eagle:package:3955995/2" value="2x17 PTH RA FEMALE"/>
 </parts>
 <sheets>
 <sheet>
