@@ -171,7 +171,7 @@
 <wire x1="14.3" y1="6.4" x2="-14.3" y2="6.4" width="0" layer="20"/>
 <wire x1="-14.3" y1="6.4" x2="-14.3" y2="-6.4" width="0" layer="20"/>
 <wire x1="14.3" y1="6.4" x2="14.3" y2="-6.4" width="0" layer="20"/>
-<text x="-10.7" y="-5.8" size="0.5" layer="22" font="vector" ratio="10" rot="MR0">Rev 1</text>
+<text x="-9.7" y="-5.8" size="0.5" layer="22" font="vector" ratio="10" rot="MR0">Rev 1</text>
 <text x="-13.5" y="2.5" size="0.5" layer="22" font="vector" ratio="10" rot="MR90">Rev 1</text>
 <text x="-13.5" y="-5.5" size="1" layer="22" font="vector" ratio="20" rot="MR90">ET Adapter</text>
 <text x="13" y="-5.5" size="0.5" layer="22" font="vector" ratio="10" rot="MR90">Designed by:</text>
