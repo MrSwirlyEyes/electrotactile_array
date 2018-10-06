@@ -520,19 +520,19 @@
 <text x="-5.334" y="0" size="0.25" layer="27" font="vector" ratio="10" rot="R270" align="top-center">&gt;VALUE</text>
 </package>
 <package name="ELECTROTACTILE_SUBSTRATE">
-<rectangle x1="-7.75" y1="-5.75" x2="7.75" y2="5.75" layer="51"/>
-<wire x1="-8" y1="6" x2="-8" y2="-6" width="0.127" layer="21"/>
-<wire x1="-8" y1="-6" x2="8" y2="-6" width="0.127" layer="21"/>
-<wire x1="8" y1="-6" x2="8" y2="6" width="0.127" layer="21"/>
-<wire x1="8" y1="6" x2="-8" y2="6" width="0.127" layer="21"/>
-<wire x1="-8.2" y1="-6.2" x2="8.2" y2="-6.2" width="0.127" layer="39"/>
-<wire x1="8.2" y1="-6.2" x2="8.2" y2="6.2" width="0.127" layer="39"/>
-<wire x1="8.2" y1="6.2" x2="-8.2" y2="6.2" width="0.127" layer="39"/>
-<wire x1="-8.2" y1="6.2" x2="-8.2" y2="-6.2" width="0.127" layer="39"/>
-<wire x1="-7.75" y1="-5.75" x2="-7.75" y2="5.75" width="0" layer="20"/>
-<wire x1="-7.75" y1="5.75" x2="7.75" y2="5.75" width="0" layer="20"/>
-<wire x1="7.75" y1="5.75" x2="7.75" y2="-5.75" width="0" layer="20"/>
-<wire x1="7.75" y1="-5.75" x2="-7.75" y2="-5.75" width="0" layer="20"/>
+<rectangle x1="-8" y1="-6" x2="8" y2="6" layer="51"/>
+<wire x1="-8.1" y1="6.1" x2="-8.1" y2="-6.1" width="0.127" layer="21"/>
+<wire x1="-8.1" y1="-6.1" x2="8.1" y2="-6.1" width="0.127" layer="21"/>
+<wire x1="8.1" y1="-6.1" x2="8.1" y2="6.1" width="0.127" layer="21"/>
+<wire x1="8.1" y1="6.1" x2="-8.1" y2="6.1" width="0.127" layer="21"/>
+<wire x1="-8.1" y1="-6.1" x2="8.1" y2="-6.1" width="0.127" layer="39"/>
+<wire x1="8.1" y1="-6.1" x2="8.1" y2="6.1" width="0.127" layer="39"/>
+<wire x1="8.1" y1="6.1" x2="-8.1" y2="6.1" width="0.127" layer="39"/>
+<wire x1="-8.1" y1="6.1" x2="-8.1" y2="-6.1" width="0.127" layer="39"/>
+<wire x1="-8" y1="-6" x2="-8" y2="6" width="0" layer="20"/>
+<wire x1="-8" y1="6" x2="8" y2="6" width="0" layer="20"/>
+<wire x1="8" y1="6" x2="8" y2="-6" width="0" layer="20"/>
+<wire x1="8" y1="-6" x2="-8" y2="-6" width="0" layer="20"/>
 </package>
 </packages>
 <symbols>
@@ -790,7 +790,6 @@
 <part name="JP7" library="PiB_connectors" deviceset="JUMPER_SMD_2-PAD_NO" device="_SILK"/>
 <part name="J7" library="PiB_connectors" deviceset="1X33_MOLEX_FPC" device="_FPC_RIBBON-CABLE" package3d_urn="urn:adsk.eagle:package:3945547/2" value="1x33 Molex Connector"/>
 <part name="J8" library="PiB_connectors" deviceset="1X33_MOLEX_FPC" device="_FPC_RIBBON-CABLE" package3d_urn="urn:adsk.eagle:package:3945547/2" value="1x33 Molex Connector"/>
-<part name="U$3" library="lipomi" deviceset="ELECTROTACTILE_SUBSTRATE" device=""/>
 </parts>
 <sheets>
 <sheet>
