@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -9,7 +9,7 @@
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -22,7 +22,7 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -36,10 +36,10 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
@@ -51,8 +51,8 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -178,8 +178,8 @@
 <text x="13.8" y="0" size="0.5" layer="22" font="vector" ratio="10" rot="MR90">MrSwirlyEyes</text>
 <text x="0" y="-7" size="1" layer="21" font="vector" ratio="20" align="top-center">Lipomi Research Group</text>
 <text x="0" y="7" size="1" layer="21" font="vector" ratio="20" align="bottom-center">ET Adapter</text>
-<dimension x1="-15.1" y1="-8.6" x2="15.1" y2="-8.6" x3="0" y3="-10.3" textsize="1" textratio="20" layer="47" unit="inch" precision="4"/>
-<dimension x1="15.1" y1="8.7" x2="15.1" y2="-8.6" x3="17.3" y3="0.05" textsize="1" textratio="20" layer="47" unit="inch" precision="4"/>
+<dimension x1="-15.1" y1="-8.6" x2="15.1" y2="-8.6" x3="0" y3="-10.3" textsize="1" textratio="20" layer="47" precision="4"/>
+<dimension x1="15.1" y1="8.7" x2="15.1" y2="-8.6" x3="17.3" y3="0.05" textsize="1" textratio="20" layer="47" precision="4"/>
 </plain>
 <libraries>
 <library name="lipomi">
@@ -534,20 +534,47 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </pass>
 </autorouter>
 <elements>
-<element name="ET2" library="lipomi" package="ELECTROTACTILE_ARRAY_BONDING_PADS" value="ELECTROTACTILE_ARRAY_BONDING_PADS" x="9.7" y="0" rot="R270"/>
-<element name="J6" library="PiB_connectors" package="1X01_SMD_L0.5-W1" value="PAD_SMD_L0.5_W1" x="9.7" y="-5.7" rot="R90"/>
-<element name="J5" library="PiB_connectors" package="1X01_SMD_L0.5-W1" value="PAD_SMD_L0.5_W1" x="9.7" y="5.7" rot="R90"/>
-<element name="ET1" library="lipomi" package="ELECTROTACTILE_ARRAY_BONDING_PADS" value="ELECTROTACTILE_ARRAY_BONDING_PADS" x="-9.7" y="0" rot="R90"/>
-<element name="JP1" library="PiB_connectors" library_urn="urn:adsk.eagle:library:3661805" package="SMT-JUMPER_3_NO_NO-SILK" package3d_urn="urn:adsk.eagle:package:3661846/1" value="JUMPER-SMT_3_NO_NO-SILK" x="0" y="7.1" rot="MR180"/>
-<element name="J3" library="PiB_connectors" package="1X01_SMD_L0.5-W1" value="PAD_SMD_L0.5_W1" x="-9.7" y="5.7" rot="R90"/>
-<element name="J4" library="PiB_connectors" package="1X01_SMD_L0.5-W1" value="PAD_SMD_L0.5_W1" x="-9.7" y="-5.7" rot="R90"/>
-<element name="JP3" library="PiB_connectors" package="SMT-JUMPER_2_NO_SILK" value="JUMPER_SMD_2-PAD_NO_SILK" x="-9.8" y="5.2" rot="MR90"/>
-<element name="JP4" library="PiB_connectors" package="SMT-JUMPER_2_NO_SILK" value="JUMPER_SMD_2-PAD_NO_SILK" x="9.8" y="5.2" rot="MR90"/>
-<element name="JP2" library="PiB_connectors" package="SMT-JUMPER_2_NO_SILK" value="JUMPER_SMD_2-PAD_NO_SILK" x="-9.8" y="-5.2" rot="MR90"/>
-<element name="JP5" library="PiB_connectors" package="SMT-JUMPER_2_NO_SILK" value="JUMPER_SMD_2-PAD_NO_SILK" x="9.8" y="-5.2" rot="MR90"/>
-<element name="JP6" library="PiB_connectors" library_urn="urn:adsk.eagle:library:3661805" package="SMT-JUMPER_3_NO_NO-SILK" package3d_urn="urn:adsk.eagle:package:3661846/1" value="JUMPER-SMT_3_NO_NO-SILK" x="0" y="-7.1" rot="MR0"/>
-<element name="JP7" library="PiB_connectors" package="SMT-JUMPER_2_NO_SILK" value="JUMPER_SMD_2-PAD_NO_SILK" x="14" y="0" rot="MR90"/>
-<element name="J7" library="PiB_connectors" package="_MOLEX-5025983393_FPC_PITCH-0.3MM" package3d_urn="urn:adsk.eagle:package:3945547/2" value="1x33 Molex Connector" x="-12.8" y="0" rot="R270">
+<element name="ET2" library="lipomi" package="ELECTROTACTILE_ARRAY_BONDING_PADS" value="ELECTROTACTILE_ARRAY_BONDING_PADS" x="9.7" y="0" smashed="yes" rot="R270">
+<attribute name="NAME" x="9.7" y="-5.334" size="0.5" layer="25" font="vector" ratio="10" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="9.7" y="5.334" size="0.25" layer="27" font="vector" ratio="10" rot="R180" align="top-center"/>
+</element>
+<element name="J6" library="PiB_connectors" package="1X01_SMD_L0.5-W1" value="PAD_SMD_L0.5_W1" x="9.7" y="-5.7" smashed="yes" rot="R90"/>
+<element name="J5" library="PiB_connectors" package="1X01_SMD_L0.5-W1" value="PAD_SMD_L0.5_W1" x="9.7" y="5.7" smashed="yes" rot="R90"/>
+<element name="ET1" library="lipomi" package="ELECTROTACTILE_ARRAY_BONDING_PADS" value="ELECTROTACTILE_ARRAY_BONDING_PADS" x="-9.7" y="0" smashed="yes" rot="R90">
+<attribute name="NAME" x="-9.7" y="5.334" size="0.5" layer="25" font="vector" ratio="10" align="bottom-center"/>
+<attribute name="VALUE" x="-9.7" y="-5.334" size="0.25" layer="27" font="vector" ratio="10" align="top-center"/>
+</element>
+<element name="JP1" library="PiB_connectors" library_urn="urn:adsk.eagle:library:3661805" package="SMT-JUMPER_3_NO_NO-SILK" package3d_urn="urn:adsk.eagle:package:3661846/1" value="JUMPER-SMT_3_NO_NO-SILK" x="0" y="7.1" smashed="yes" rot="MR180">
+<attribute name="NAME" x="0" y="5.957" size="0.6096" layer="26" font="vector" ratio="20" rot="MR180" align="bottom-center"/>
+<attribute name="VALUE" x="0" y="8.243" size="0.6096" layer="28" font="vector" ratio="20" rot="MR180" align="top-center"/>
+</element>
+<element name="J3" library="PiB_connectors" package="1X01_SMD_L0.5-W1" value="PAD_SMD_L0.5_W1" x="-9.7" y="5.7" smashed="yes" rot="R90"/>
+<element name="J4" library="PiB_connectors" package="1X01_SMD_L0.5-W1" value="PAD_SMD_L0.5_W1" x="-9.7" y="-5.7" smashed="yes" rot="R90"/>
+<element name="JP3" library="PiB_connectors" package="SMT-JUMPER_2_NO_SILK" value="JUMPER_SMD_2-PAD_NO_SILK" x="-9.8" y="5.2" smashed="yes" rot="MR90">
+<attribute name="NAME" x="-8.657" y="5.2" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
+<attribute name="VALUE" x="-10.943" y="5.2" size="0.6096" layer="28" font="vector" ratio="20" rot="MR90" align="top-center"/>
+</element>
+<element name="JP4" library="PiB_connectors" package="SMT-JUMPER_2_NO_SILK" value="JUMPER_SMD_2-PAD_NO_SILK" x="9.8" y="5.2" smashed="yes" rot="MR90">
+<attribute name="NAME" x="10.943" y="5.2" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
+<attribute name="VALUE" x="8.657" y="5.2" size="0.6096" layer="28" font="vector" ratio="20" rot="MR90" align="top-center"/>
+</element>
+<element name="JP2" library="PiB_connectors" package="SMT-JUMPER_2_NO_SILK" value="JUMPER_SMD_2-PAD_NO_SILK" x="-9.8" y="-5.2" smashed="yes" rot="MR90">
+<attribute name="NAME" x="-8.657" y="-5.2" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
+<attribute name="VALUE" x="-10.943" y="-5.2" size="0.6096" layer="28" font="vector" ratio="20" rot="MR90" align="top-center"/>
+</element>
+<element name="JP5" library="PiB_connectors" package="SMT-JUMPER_2_NO_SILK" value="JUMPER_SMD_2-PAD_NO_SILK" x="9.8" y="-5.2" smashed="yes" rot="MR90">
+<attribute name="NAME" x="10.943" y="-5.2" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
+<attribute name="VALUE" x="8.657" y="-5.2" size="0.6096" layer="28" font="vector" ratio="20" rot="MR90" align="top-center"/>
+</element>
+<element name="JP6" library="PiB_connectors" library_urn="urn:adsk.eagle:library:3661805" package="SMT-JUMPER_3_NO_NO-SILK" package3d_urn="urn:adsk.eagle:package:3661846/1" value="JUMPER-SMT_3_NO_NO-SILK" x="0" y="-7.1" smashed="yes" rot="MR0">
+<attribute name="NAME" x="0" y="-5.957" size="0.6096" layer="26" font="vector" ratio="20" rot="MR0" align="bottom-center"/>
+<attribute name="VALUE" x="0" y="-8.243" size="0.6096" layer="28" font="vector" ratio="20" rot="MR0" align="top-center"/>
+</element>
+<element name="JP7" library="PiB_connectors" package="SMT-JUMPER_2_NO_SILK" value="JUMPER_SMD_2-PAD_NO_SILK" x="14" y="0" smashed="yes" rot="MR90">
+<attribute name="NAME" x="15.143" y="0" size="0.6096" layer="26" font="vector" ratio="20" rot="MR90" align="bottom-center"/>
+<attribute name="VALUE" x="12.857" y="0" size="0.6096" layer="28" font="vector" ratio="20" rot="MR90" align="top-center"/>
+</element>
+<element name="J7" library="PiB_connectors" package="_MOLEX-5025983393_FPC_PITCH-0.3MM" package3d_urn="urn:adsk.eagle:package:3945547/2" value="1x33 Molex Connector" x="-12.8" y="0" smashed="yes" rot="R270">
 <attribute name="DATASHEET" value="https://www.molex.com/pdm_docs/sd/5025982593_sd.pdf" x="-12.8" y="0" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DATASHEET_CABLE" value="https://www.molex.com/pdm_docs/sd/150150423_sd.pdf" x="-12.8" y="0" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DIST" value="Digikey" x="-12.8" y="0" size="1.778" layer="27" rot="R270" display="off"/>
@@ -560,9 +587,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MFR_CABLE" value="Molex, LLC" x="-12.8" y="0" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="5025983393" x="-12.8" y="0" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN_CABLE" value="0150150233" x="-12.8" y="0" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" value="1x33 Molex Connector" x="-12.8" y="0" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="-10.8" y="0" size="0.5" layer="25" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="-14.9" y="0" size="0.5" layer="27" font="vector" ratio="10" rot="R270" align="top-center"/>
 </element>
-<element name="J8" library="PiB_connectors" package="_MOLEX-5025983393_FPC_PITCH-0.3MM" package3d_urn="urn:adsk.eagle:package:3945547/2" value="1x33 Molex Connector" x="12.8" y="0" rot="R90">
+<element name="J8" library="PiB_connectors" package="_MOLEX-5025983393_FPC_PITCH-0.3MM" package3d_urn="urn:adsk.eagle:package:3945547/2" value="1x33 Molex Connector" x="12.8" y="0" smashed="yes" rot="R90">
 <attribute name="DATASHEET" value="https://www.molex.com/pdm_docs/sd/5025982593_sd.pdf" x="12.8" y="0" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DATASHEET_CABLE" value="https://www.molex.com/pdm_docs/sd/150150423_sd.pdf" x="12.8" y="0" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIST" value="Digikey" x="12.8" y="0" size="1.778" layer="27" rot="R90" display="off"/>
@@ -575,9 +603,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MFR_CABLE" value="Molex, LLC" x="12.8" y="0" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="5025983393" x="12.8" y="0" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN_CABLE" value="0150150233" x="12.8" y="0" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" value="1x33 Molex Connector" x="12.8" y="0" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="10.8" y="0" size="0.5" layer="25" font="vector" ratio="10" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="14.9" y="0" size="0.5" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
 </element>
-<element name="U$1" library="lipomi" package="ELECTROTACTILE_SUBSTRATE" value="" x="0" y="0"/>
+<element name="U$1" library="lipomi" package="ELECTROTACTILE_SUBSTRATE" value="" x="0" y="0" smashed="yes"/>
 </elements>
 <signals>
 <signal name="N$14">
